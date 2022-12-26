@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/fgonga/booking-play-vue/issues"
   },
-  "homepage": "https://github.com/fgonga/booking-play-vue#readme"
+  "homepage": "https://github.com/fgonga/booking-play-vue#readme",
+  "dependencies": {
+    "vue": "^2.7.14"
+  }
 }
