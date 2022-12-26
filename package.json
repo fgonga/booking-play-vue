@@ -1,0 +1,28 @@
+{
+  "name": "booking-play-vue",
+  "version": "1.0.0",
+  "description": "Criado com o play framework e realmente inspirado no aplicativo de exemplo de reserva fornecido pelo seam framework",
+  "main": "commitlint.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgonga/booking-play-vue.git"
+  },
+  "keywords": [
+    "play",
+    "vue",
+    "js",
+    "java"
+  ],
+  "author": "fgonga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgonga/booking-play-vue/issues"
+  },
+  "homepage": "https://github.com/fgonga/booking-play-vue#readme"
+}
