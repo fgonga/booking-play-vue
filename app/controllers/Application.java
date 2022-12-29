@@ -55,13 +55,14 @@ public class Application extends Controller {
         User user = User.find("byUsernameAndPassword", username, password).first();
         if(user != null) {
             session.put("user", user.username);
-            flash.success("Welcome, " + user.name);
-            Hotels.index();         
+            renderJSON(user);
+            //Hotels.index();
         }
         // Oops
         flash.put("username", username);
         flash.error("Login failed");
-        index();
+        renderJSON("{}");
+       // index();
     }
     
     public static void logout() {

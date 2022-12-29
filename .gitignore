@@ -104,3 +104,6 @@ dist
 .tern-port
 temp/
 .idea/
+*.iml
+*.ipr
+*.iws

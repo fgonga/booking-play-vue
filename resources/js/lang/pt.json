@@ -1,0 +1,284 @@
+{
+    "welcome": "Bem vindo",
+    "sign_continue": "Faça login para continuar.",
+    "print":"Imprimir",
+    "edit":"Editar",
+    "show":"Detalhes",
+    "ok": "Ok",
+    "back": "Voltar",
+    "cancel": "Cancelar",
+    "error_alert_title": "Oops...",
+    "error_alert_text": "Algo deu errado! Por favor, tente novamente.",
+    "token_expired_alert_title": "Sessão expirada!",
+    "token_expired_alert_text": "Faça login novamente para continuar.",
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "page_not_found": "Página não encontrada",
+    "page_not_unauthorised": "Não tem permissão",
+    "go_home": "Inicio",
+    "logout": "Sair",
+    "save":"Cadastrar",
+    "email": "Email",
+    "remember_me": "Lembre-me",
+    "password": "Senha",
+    "forgot_password": "Esqueceu sua senha?",
+    "confirm_password": "Confirmar Senha",
+    "name": "Nome",
+    "toggle_navigation": "Alternar de navegação",
+    "home": "Inicio",
+    "you_are_logged_in": "Você está logado!",
+    "reset_password": "Redefinir senha",
+    "send_password_reset_link": "Enviar email de recuperação",
+    "settings": "Configurações",
+    "profile": "Perfil",
+    "your_info": "Suas informações",
+    "info_updated": "Suas informações foram atualizadas!",
+    "update": "Atualizar",
+    "your_password": "Sua senha",
+    "password_updated": "Sua senha foi atualizada!",
+    "new_password": "Nova Senha",
+    "login_with": "Entrar",
+    "register_with": "Registre-se",
+    "verify_email": "verificar email",
+    "send_verification_link": "Enviar link de verificação",
+    "resend_verification_link": "Reenviar link de verificação?",
+    "failed_to_verify_email": "Falha ao verificar o email.",
+    "verify_email_address": "Enviamos um e-mail com o link de verificação.",
+    "validation.email": "O campo  não contém um endereço de email válido.",
+    "validation": {
+        "required":"Este campo é obrigatório.",
+        "required":"Este campo é obrigatório.",
+        "accepted"             : "O campo deve ser aceito.",
+        "active_url"           : "O campo deve conter uma URL válida.",
+        "after"                : "O campo deve conter uma data posterior a :date.",
+        "after_or_equal"       : "O campo deve conter uma data superior ou igual a :date.",
+        "alpha"                : "O campo deve conter apenas letras.",
+        "alpha_dash"           : "O campo deve conter apenas letras, números e traços.",
+        "alpha_num"            : "O campo deve conter apenas letras e números .",
+        "array"                : "O campo deve conter um array.",
+        "before"               : "O campo deve conter uma data anterior a :date.",
+        "before_or_equal"      : "O campo deve conter uma data inferior ou igual a :date.",
+        "boolean"              : "O campo deve conter o valor verdadeiro ou falso.",
+        "confirmed"            : "A confirmação para o campo não coincide.",
+        "date"                 : "O campo não contém uma data válida.",
+        "date_equals"          : "O campo deve ser uma data igual a :date.",
+        "date_format"          : "A data informada para o campo não respeita o formato :format.",
+        "different"            : "Os campos e :other devem conter valores diferentes.",
+        "digits"               : "O campo deve conter :digits dígitos.",
+        "digits_between"       : "O campo deve conter entre :min a :max dígitos.",
+        "dimensions"           : "O campo não é uma dimensão de imagem válida.",
+        "distinct"             : "O campo contém um valor duplicado.",
+        "email"                : "O campo não contém um endereço de email válido.",
+        "ends_with"            : "The must end with one of the following: :values",
+        "exists"               : "O valor selecionado para o campo é inválido.",
+        "file"                 : "O campo deve conter um arquivo.",
+        "filled"               : "O campo é obrigatório.",
+        "image"                : "O campo deve conter uma imagem.",
+        "in"                   : "O campo não contém um valor válido.",
+        "in_array"             : "O campo não existe em :other.",
+        "integer"              : "O campo deve conter um número inteiro.",
+        "decimal"              : "O campo deve conter um número.",
+        "ip"                   : "O campo deve conter um IP válido.",
+        "ipv4"                 : "O campo deve conter um IPv4 válido.",
+        "ipv6"                 : "O campo deve conter um IPv6 válido.",
+        "json"                 : "O campo deve conter uma string JSON válida.",
+        "mimes"                : "O campo deve conter um arquivo do tipo: :values.",
+        "mimetypes"            : "O campo deve conter um arquivo do tipo: :values.",
+        "not_in"               : "O campo contém um valor inválido.",
+        "not_regex"            : "O formato do valor é inválido.",
+        "numeric"              : "O campo deve conter um valor numérico.",
+        "present"              : "O campo deve estar presente.",
+        "regex"                : "O formato do valor informado no campo é inválido.",
+        "required_if"          : "O campo é obrigatório quando o valor do campo :other é igual a :value.",
+        "required_unless"      : "O campo é obrigatório a menos que :other esteja presente em :values.",
+        "required_with"        : "O campo é obrigatório quando :values está presente.",
+        "required_with_all"    : "O campo é obrigatório quando um dos :values está presente.",
+        "required_without"     : "O campo é obrigatório quando :values não está presente.",
+        "required_without_all" : "O campo é obrigatório quando nenhum dos :values está presente.",
+        "same"                 : "Os campos e :other devem conter valores iguais.",
+        "starts_with"          : "O campo deve começar com um dos seguintes valores: :values",
+        "string"               : "O campo deve ser uma string.",
+        "timezone"             : "O campo deve conter um fuso horário válido.",
+        "unique"               : "O campo já está em uso.",
+        "uploaded"             : "Falha no Upload do arquivo.",
+        "url"                  : "O formato da URL informada para o campo é inválido.",
+        "uuid"                 : "O campo deve ser um UUID válido."
+    },
+     "navbar": {
+    "search": {
+      "text": "Procurar..."
+    },
+    "dropdown": {
+      "notification": {
+        "text": "Notificações",
+        "subtext": "Ver tudo",
+        "order": {
+          "title": "Seu pedido foi feito",
+          "text": "Se várias línguas aglutinam a gramática",
+          "time": "3 min atraz"
+        },
+        "james": {
+          "title": "James Lemire",
+          "text": "Vai parecer inglês simplificado..",
+          "time": "1 hours ago"
+        },
+        "item": {
+          "title": "Seu item foi enviado",
+          "text": "Se várias línguas aglutinam a gramática",
+          "time": "3 min ago"
+        },
+        "salena": {
+          "title": "Salena Layfield",
+          "text": "Como um amigo cético de Cambridge ocidental.",
+          "time": "1 hours ago"
+        },
+        "button": "Veja mais..."
+      },
+      "profile": {
+        "text": "Peter",
+        "list": {
+          "welcome": "Bem vindo  Peter!",
+          "profile": "Perfil",
+          "messages": "Mensagens",
+          "taskboard": "Quadro de tarefas",
+          "help": "Ajuda",
+          "balance": {
+            "text": "Equilíbrio",
+            "amount": "$1901.67"
+          },
+          "settings": {
+            "text": "Configurações",
+            "badge": "Novo"
+          },
+          "lockscreen": "Tela de bloqueio",
+          "logout": "Sair"
+        }
+      }
+    }
+  },
+  "menuitems": {
+    "menu": {
+      "text": "Menu"
+    },
+    "dashboard": {
+      "text": "Dashboard"
+    },
+    "more": {
+      "text": "Mais"
+    },
+    "apps": {
+      "text": "Aplicativos",
+      "calendar": {
+        "text": "Calendarios"
+      },
+      "chat": {
+        "text": "Chat"
+      },
+      "email": {
+        "text": "Email",
+        "list": {
+          "inbox": "Caixa de entrada",
+          "reademail": "Ler e-mail"
+        }
+      }
+    },
+    "pages": {
+      "text": "Pages"
+    },
+    "authentication": {
+      "text": "Autenticação",
+      "list": {
+        "login": "Entrar",
+        "register": "Registro",
+        "recoverpwd": "Recuperar senha ",
+        "lockscreen": "Tela de bloqueio",
+        "verification": "Verificação de e-mail",
+        "verification-step": "Confirmar mais Utilitário",
+        "confirm-mail": "Confirmar Mail"
+      }
+    },
+    "utility": {
+      "text": "Utility",
+      "list": {
+        "starter": "Starter Page",
+        "profile": "Profile",
+        "invoice": "Invoice",
+        "maintenance": "Maintenance",
+        "comingsoon": "Coming Soon",
+        "timeline": "Timeline",
+        "faqs": "FAQs",
+        "pricing": "Pricing",
+        "error404": "Error 404",
+        "error500": "Error 500"
+      }
+    },
+    "adminkit": {
+      "text": "Admin Kit"
+    },
+    "components": {
+      "text": "Components"
+    },
+    "uielements": {
+      "text": "UI Elements"
+    },
+    "advancedkit": {
+      "text": "Advanced Kit",
+      "list": {
+        "sweetalert": "Sweet-Alert",
+        "rangeslider": "Range Slider",
+        "notifications": "Notifications",
+        "carousel": "Carousel"
+      }
+    },
+    "typography": {
+      "text": "Typography"
+    },
+    "forms": {
+      "text": "Forms",
+      "badge": "2",
+      "list": {
+        "elements": "Form Elements",
+        "advanced": "Form Advanced"
+      }
+    },
+    "tables": {
+      "text": "Tables",
+      "list": {
+        "bootstrap": "Bootstrap Tables",
+        "advanced": "Data Table"
+      }
+    },
+    "extras": {
+      "text": "Extra pages"
+    },
+    "charts": {
+      "text": "Charts"
+    },
+    "icons": {
+      "text": "Icons",
+      "list": {
+        "boxicons": "Boxicons",
+        "materialdesign": "Material Design",
+        "dripicons": "Dripicons",
+        "fontawesome": "Font Awesome 5"
+      }
+    },
+    "maps": {
+      "text": "Maps"
+    },
+    "multilevel": {
+      "text": "Multi Level",
+      "list": {
+        "level1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "level2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  }
+
+}
