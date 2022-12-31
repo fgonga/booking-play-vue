@@ -2,45 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da109a5c-0a0d-4d07-8075-c6bd963abc77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/BaseApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositores/entities/AbstractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositores/entities/AuthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositores/entities/HotelsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositores/interfaces/RepositoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/layouts/default.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/auth/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/hotel/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/services/HotelService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.BaseController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.api.Auth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.api.BaseApiController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.api.Hotel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/repositores.entities.AbstractRepository" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/repositores.entities.AuthRepository" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/repositores.entities.HotelsRepository" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/repositores.interfaces.RepositoryInterface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/repository.ResponseRepository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Booking.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Booking.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Booking.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Booking.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Hotels.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Hotels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/layouts/auth.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/application/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/services/AuthService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Hotels" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Hotels" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Hotels.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Hotels.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/production/Hotel Booking/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/production/Hotel Booking/views/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Application/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Application/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/confirmBooking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/settings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Hotels/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/errors/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/errors/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/hotel/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/hotel/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.api.Hotel" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.api.Hotel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/api/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/api/Hotel.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +83,7 @@
       <recent name="$PROJECT_DIR$/resources/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/Application" />
       <recent name="$PROJECT_DIR$/resources/js/helpers" />
       <recent name="$PROJECT_DIR$/resources/scss" />
     </key>
@@ -248,7 +225,7 @@
       <workItem from="1672383584833" duration="4183000" />
       <workItem from="1672389616683" duration="383000" />
       <workItem from="1672423701401" duration="2020000" />
-      <workItem from="1672425845475" duration="13975000" />
+      <workItem from="1672425845475" duration="14229000" />
     </task>
     <servers />
   </component>

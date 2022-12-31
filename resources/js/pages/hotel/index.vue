@@ -113,7 +113,7 @@ export default {
     },
     handleFindHotels(){
       HotelService.index(this.search,this.params.size,this.params.page).then(response =>{
-        console.log(response.data);
+        this.hotels = response.data.data
       })
     }
   }
