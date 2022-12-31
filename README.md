@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.playframework.com/">
-    <img src="https://raw.githubusercontent.com/fgonga/booking-play-vue/main/background.png" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://raw.githubusercontent.com/fgonga/booking-play-vue/main/background.png" alt="Bootstrap logo" width="600" height="490">
   </a>
 </p>
 <h3 align="center">Booking Play Vue Spa</h3>
