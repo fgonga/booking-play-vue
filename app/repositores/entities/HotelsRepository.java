@@ -19,4 +19,8 @@ public  class  HotelsRepository extends AbstractRepository{
         }
         return hotels;
     }
+
+    public static Hotel show(Long id) {
+        return Hotel.findById(id);
+    }
 }

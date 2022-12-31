@@ -6,8 +6,6 @@ import models.User;
 import play.mvc.Before;
 import repositores.entities.HotelsRepository;
 
-import java.util.List;
-
 public class Hotels extends BaseController{
 
     @Before

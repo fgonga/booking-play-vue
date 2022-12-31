@@ -51,7 +51,7 @@ export const actions = {
     }
   },
   updateUser({ commit }, data) {
-    console.log(data)
+
     commit(types.FETCH_USER_SUCCESS, { user: data });
   },
   async logout({ commit }) {

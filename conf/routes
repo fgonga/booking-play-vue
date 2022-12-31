@@ -6,7 +6,8 @@ GET     /                                          Application.index
 GET     /{any}                                     Application.index
 
 #API
-GET     /api/hotel                               api.hotel.index
+GET     /api/hotel                                 api.hotel.index
+GET     /api/hotel/{id}                            api.hotel.show
 # AUTH
 POST     /api/auth/login                            api.auth.login
 

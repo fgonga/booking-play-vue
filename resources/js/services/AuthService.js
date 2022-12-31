@@ -1,5 +1,5 @@
 import axios from 'axios'
-const resource = 'api/auth'
+const resource = '/api/auth'
 export default {
     login(auth) {
         return axios.post(`${resource}/login`,auth);

@@ -1,8 +1,10 @@
 package controllers;
+
 import models.User;
 import play.mvc.Before;
 import play.mvc.Controller;
 import play.mvc.results.RenderJson;
+
 import java.util.HashMap;
 import java.util.Map;
 public class BaseController extends Controller {
@@ -43,15 +45,6 @@ public class BaseController extends Controller {
         success = false;
         throw new RenderJson(response());
     }
-
-    @Before
-    static void addUser() {
-        User user = connected();
-        if(user != null) {
-            renderArgs.put("user", user);
-        }
-    }
-
     static User connected() {
         if(renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
@@ -62,6 +55,5 @@ public class BaseController extends Controller {
         }
         return null;
     }
-
 
 }

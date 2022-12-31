@@ -39,7 +39,7 @@ export default {
     handleLogin(){
       return AuthService.login(this.auth).then(async response => {
         await this.$store.dispatch('auth/updateUser', response.data.data)
-        this.$router.push({ name: 'hotels.index' })
+        this.$router.push({ name: 'hotel.index' })
       }).catch((e)=>{
         console.log(e)
       })

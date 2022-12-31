@@ -29,8 +29,8 @@ axios.interceptors.request.use((request) => {
 
 
 
-     request.headers['content-type'] = 'application/x-www-form-urlencoded'
-   request.data = new URLSearchParams(request.data);
+    request.headers['content-type'] = 'application/x-www-form-urlencoded'
+    request.data = new URLSearchParams(request.data);
 
     return request;
 });
@@ -66,7 +66,7 @@ axios.interceptors.response.use((response) => {
             cancelButtonText: i18n.t('cancel'),
         }).then(() => {
             store.commit('auth/LOGOUT');
-            router.push({ name: 'login' });
+            router.push({ name: 'auth.login' });
         });
         return Promise.reject(error);
     }

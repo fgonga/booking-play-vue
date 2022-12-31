@@ -1,17 +1,17 @@
 <template>
   <div>
     <h1>Search Hotels</h1>
-    <p>
-      <input v-model="search" type="text" id="search" size="30">
-      <button @click="handleFindHotels" type="submit" id="submit">Find Hotels</button>
-      <br>
+    <input v-model="search" type="text" id="search" size="30">
+    <button @click="handleFindHotels" type="submit" id="submit">Find Hotels</button>
+    <br>
+    <div style="margin: 5px 0px;">
       Maximum results:
       <select v-model="params.size" id="size">
         <option :value="8">8</option>
         <option :value="10">10</option>
         <option :value="20">20</option>
       </select>
-    </p>
+    </div>
     <table v-if="hotels.length">
       <thead>
       <tr>
@@ -27,6 +27,9 @@
         <td>{{hotel.address}}</td>
         <td>{{hotel.city}}, {{hotel.state}}, {{hotel.country}}</td>
         <td>
+          <router-link :to="{name:'hotel.show',params:{id: hotel.id}}" class="control-action">
+            View Hotel
+          </router-link>
         </td>
       </tr>
       </tbody>
@@ -76,7 +79,7 @@
 import HotelService from "~/services/HotelService";
 export default {
   layout: "default",
-  //  middleware: "guest",
+  middleware: "auth",
   metaInfo() {
     return { title: 'Hotels' };
   },
@@ -107,6 +110,9 @@ export default {
       bookings:[],
       hotels:[]
     };
+  },
+  created() {
+    this.handleFindHotels();
   },
   methods: {
     handleLogin(){

@@ -4,7 +4,8 @@ function page(path) {
 
 export default [
     { path: '/', name: 'home', component: page('auth/login.vue') },
-    { path: '/login', name: 'login', component: page('auth/login.vue') },
+    { path: '/login', name: 'auth.login', component: page('auth/login.vue') },
     /** ****************** Hotels ******************** */
-    { path: '/hotels', name: 'hotels.index', component: page('hotel/index.vue') },
+    { path: '/hotel', name: 'hotel.index', component: page('hotel/index.vue') },
+    { path: '/hotel/:id', name: 'hotel.show', component: page('hotel/show.vue') },
 ];

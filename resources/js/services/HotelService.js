@@ -1,5 +1,5 @@
 import axios from 'axios'
-const resource = 'api/hotel'
+const resource = '/api/hotel'
 export default {
     index(search = null, size= 8,page= 1) {
         return axios.get(`${resource}`,{
@@ -9,5 +9,8 @@ export default {
                 page: page
             }
         });
+    },
+    show (id) {
+        return axios.get(`${resource}/${id}`)
     },
 };

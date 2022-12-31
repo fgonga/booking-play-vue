@@ -147,7 +147,7 @@ function callMiddleware(middleware, to, from, next) {
     // Stop if "_next" was called with an argument or the stack is empty.
     if (args.length > 0 || stack.length === 0) {
       if (args.length > 0) {
-        router.app.$loading.finish();
+       // router.app.$loading.finish();
       }
 
       return next(...args);
