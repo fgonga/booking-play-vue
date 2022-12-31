@@ -13,7 +13,7 @@ const globalMiddleware = ['locale', 'check-auth'];
 
 // Load middleware modules dynamically.
 const routeMiddleware = resolveMiddleware(
-  require.context('~/middleware', false, /.*\.js$/),
+    require.context('~/middleware', false, /.*\.js$/),
 );
 
 const router = createRouter();
@@ -53,7 +53,7 @@ async function beforeEach(to, from, next) {
   try {
     // Get the matched components and resolve them.
     components = await resolveComponents(
-      router.getMatchedComponents({ ...to }),
+        router.getMatchedComponents({ ...to }),
     );
   } catch (error) {
     if (/^Loading( CSS)? chunk (\d)+ failed\./.test(error.message)) {
@@ -68,7 +68,7 @@ async function beforeEach(to, from, next) {
 
   // Start the loading bar.
   if (components[components.length - 1].loading !== false) {
-    router.app.$nextTick(() => router.app.$loading.start());
+    /*router.app.$nextTick(() => router.app.$loading.start());*/
   }
 
   // Get the middleware for all the matched components.
@@ -129,7 +129,7 @@ async function asyncData(components) {
 async function afterEach(to, from, next) {
   await router.app.$nextTick();
 
-  router.app.$loading.finish();
+  //router.app.$loading.finish();
 }
 
 /**
@@ -249,8 +249,8 @@ function scrollBehavior(to, from, savedPosition) {
  */
 function resolveMiddleware(requireContext) {
   return requireContext.keys()
-    .map((file) => [file.replace(/(^.\/)|(\.js$)/g, ''), requireContext(file)])
-    .reduce((guards, [name, guard]) => (
-      { ...guards, [name]: guard.default }
-    ), {});
+      .map((file) => [file.replace(/(^.\/)|(\.js$)/g, ''), requireContext(file)])
+      .reduce((guards, [name, guard]) => (
+          { ...guards, [name]: guard.default }
+      ), {});
 }

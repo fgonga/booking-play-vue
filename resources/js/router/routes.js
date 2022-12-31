@@ -3,8 +3,8 @@ function page(path) {
 }
 
 export default [
-    /** ****************** CLIENTE ******************** */
-    { path: '/', name: 'home', component: page('application/index.vue') },
-
-
+    { path: '/', name: 'home', component: page('auth/login.vue') },
+    { path: '/login', name: 'login', component: page('auth/login.vue') },
+    /** ****************** Hotels ******************** */
+    { path: '/hotels', name: 'hotels.index', component: page('hotel/index.vue') },
 ];

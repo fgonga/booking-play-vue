@@ -1,12 +1,11 @@
 package controllers;
 
-import play.mvc.*;
-import play.data.validation.*;
+import models.User;
+import play.data.validation.Valid;
+import play.mvc.Before;
 
-import models.*;
+public class Application extends BaseController {
 
-public class Application extends Controller {
-    
     @Before
     static void addUser() {
         User user = connected();
@@ -14,7 +13,11 @@ public class Application extends Controller {
             renderArgs.put("user", user);
         }
     }
-    
+
+    public static void index() {
+        render();
+    }
+
     static User connected() {
         if(renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
@@ -22,23 +25,18 @@ public class Application extends Controller {
         String username = session.get("user");
         if(username != null) {
             return User.find("byUsername", username).first();
-        } 
+        }
         return null;
     }
-    
+
     // ~~
 
-    public static void index() {
-        if(connected() != null) {
-            Hotels.index();
-        }
-        render();
-    }
-    
+
+
     public static void register() {
         render();
     }
-    
+
     public static void saveUser(@Valid User user, String verifyPassword) {
         validation.required(verifyPassword);
         validation.equals(verifyPassword, user.password).message("Your password doesn't match");
@@ -48,23 +46,20 @@ public class Application extends Controller {
         user.create();
         session.put("user", user.username);
         flash.success("Welcome, " + user.name);
-        Hotels.index();
+        //Hotels.index();
     }
-    
+
     public static void login(String username, String password) {
         User user = User.find("byUsernameAndPassword", username, password).first();
-        if(user != null) {
-            session.put("user", user.username);
-            renderJSON(user);
-            //Hotels.index();
+
+        if (user == null){
+            sendError(422,"The given data was invalid.");
         }
-        // Oops
-        flash.put("username", username);
-        flash.error("Login failed");
-        renderJSON("{}");
-       // index();
+
+        session.put("user", user.username);
+        sendSuccess(user,"success");
     }
-    
+
     public static void logout() {
         session.clear();
         index();
