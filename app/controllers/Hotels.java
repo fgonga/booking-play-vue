@@ -4,7 +4,7 @@ import models.Booking;
 import models.Hotel;
 import models.User;
 import play.mvc.Before;
-import repositores.entities.HotelsRepository;
+import repositores.entities.HotelRepository;
 
 public class Hotels extends BaseController{
 
@@ -17,7 +17,7 @@ public class Hotels extends BaseController{
     }
 
     public static void index(String search, Integer size, Integer page) {
-        sendSuccess(HotelsRepository.index(search,size,page));
+        sendSuccess(HotelRepository.index(search,size,page));
     }
 
 

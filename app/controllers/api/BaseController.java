@@ -1,15 +1,15 @@
 package controllers.api;
-
 import models.User;
 import play.mvc.Before;
 import play.mvc.Controller;
+import play.mvc.Scope;
 import play.mvc.results.RenderJson;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseApiController extends Controller {
+public class BaseController extends Controller {
     private static final Integer HTTP_SUCCESS_STATUS_CODE = 200;
+
     private static Integer code;
     private static Object data;
     private static String message;
@@ -31,9 +31,16 @@ public class BaseApiController extends Controller {
         success = true;
         throw new RenderJson(response());
     }
-    static  void sendSuccess(Object o){
+    static  void sendSuccess(Object args){
         code = HTTP_SUCCESS_STATUS_CODE;
-        data = o;
+        data = args;
+        message = "success";
+        success = true;
+        throw new RenderJson(response());
+    }
+    static  void sendSuccess(Object... args){
+        code = HTTP_SUCCESS_STATUS_CODE;
+        data = args;
         message = "success";
         success = true;
         throw new RenderJson(response());
@@ -65,6 +72,8 @@ public class BaseApiController extends Controller {
         }
         return null;
     }
-
+    public static Scope.Session getSession(){
+        return session;
+    }
 
 }

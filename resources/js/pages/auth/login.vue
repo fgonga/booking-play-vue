@@ -21,6 +21,7 @@
 </template>
 <script>
 import AuthService from '~/services/AuthService';
+
 export default {
   layout: "default",
   //  middleware: "guest",

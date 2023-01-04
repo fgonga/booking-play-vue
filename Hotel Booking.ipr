@@ -158,6 +158,13 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/tmp/classes" />
   </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="dev" type="CompoundRunConfigurationType">
+      <toRun name="dev" type="ShConfigurationType" />
+      <toRun name="dev" type="NodeJSConfigurationType" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>

@@ -6,10 +6,12 @@ GET     /                                          Application.index
 GET     /{any}                                     Application.index
 
 #API
-GET     /api/hotel                                 api.hotel.index
-GET     /api/hotel/{id}                            api.hotel.show
+GET     /api/hotel                                 api.hotelcontroller.index
+GET     /api/hotel/{id}                            api.hotelcontroller.show
+POST    /api/booking                               api.bookingcontroller.store
+
 # AUTH
-POST     /api/auth/login                            api.auth.login
+POST     /api/auth/login                            api.authcontroller.login
 
 
 # Map static resources from the /app/public folder to the /public path

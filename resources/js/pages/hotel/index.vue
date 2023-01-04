@@ -77,6 +77,7 @@
 </template>
 <script>
 import HotelService from "~/services/HotelService";
+
 export default {
   layout: "default",
   middleware: "auth",

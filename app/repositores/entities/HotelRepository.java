@@ -1,9 +1,7 @@
 package repositores.entities;
 import models.Hotel;
-import play.exceptions.UnexpectedException;
-
 import java.util.List;
-public  class  HotelsRepository extends AbstractRepository{
+public  class HotelRepository extends AbstractRepository{
 
     public static List<Hotel> index(String search, Integer size, Integer page){
         List<Hotel> hotels = null;

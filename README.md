@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.playframework.com/">
-    <img src="https://raw.githubusercontent.com/fgonga/booking-play-vue/main/background.png" alt="Bootstrap logo" width="600" height="490">
+    <img src="https://raw.githubusercontent.com/fgonga/booking-play-vue/main/background.png" alt="Bootstrap logo" width="400" height="300">
   </a>
 </p>
 <h3 align="center">Booking Play Vue Spa</h3>
@@ -24,7 +24,6 @@ Originalmente criado com o play framework e realmente inspirado no aplicativo de
 ## Índice
 
 - [Começando](#começando)
-- [Estado](#status)
 - [O que vem includio](#whats-included)
 - [Bugs e novos recursos](#bugs-and-feature-requests)
 - [Documentação](#documentation)
@@ -45,11 +44,6 @@ Opções de início rápido estão disponíveis:
 - Instale as dependençias [npm](https://www.npmjs.com/): `npm install`
 - Execute o script [npm](https://www.npmjs.com/): `npm run dev`
 - Inicie o play [play](https://www.playframework.com/documentation/1.5.x/install): Play: `play run` 
-
-
-
-## Estado
-
 
 
 

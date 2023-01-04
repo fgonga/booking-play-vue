@@ -1,8 +1,7 @@
 package controllers.api;
 import models.User;
 import repositores.entities.AuthRepository;
-public class Auth extends BaseApiController {
-
+public class AuthController extends BaseController {
     public static void login(String username, String password) {
         User user = AuthRepository.login(username,password);
         if (user != null){
